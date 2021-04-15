@@ -1,0 +1,20 @@
+<documents xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.35">
+    <accept_notification action_id="607">
+        <subject_id>00000000370036</subject_id>
+        <counterparty_id>00000000267973</counterparty_id>
+        <operation_date>2020-11-25T17:24:48.901000+03:00</operation_date>
+        <order_details>
+            <sgtin>046058940013600000000375487</sgtin>
+            <sgtin>090036380238621004546684030</sgtin>
+            <sgtin>046058940013600000000059355</sgtin>
+            <sgtin>090036380238621005609137352</sgtin>
+            <sgtin>090036380238621007994531741</sgtin>
+            <sgtin>090036380238621006469577049</sgtin>
+            <sgtin>090036380238621003588344027</sgtin>
+            <sgtin>046058940013600000000012161</sgtin>
+            <sgtin>046058940013600000000162737</sgtin>
+            <sgtin>046058940013600000000225028</sgtin>
+            <sgtin>090036380238621006804730304</sgtin>
+        </order_details>
+    </accept_notification>
+</documents>

@@ -1,0 +1,68 @@
+.authoriz__btn {
+   margin-top: 50px;
+}
+
+.list-select .select__body-bg,
+.edit__block .select__body-bg {
+   display: block;
+}
+
+.list-select .select__body,
+.edit__block .select__body {
+   display: block;
+   z-index: 52;
+}
+
+.edit__block .select__body {
+   z-index: 99;
+}
+
+.edit__block-form-left {
+   padding-right: 20px;
+}
+
+.header .menu__list-sublink-word:hover:after {
+   content: none;
+}
+
+.edit__block-form-item {
+   margin: 25px 0;
+}
+
+.table__block-table {
+   height: auto;
+}
+
+.table__block-wrapper {
+   height: 510px;
+}
+
+.accent__block .table__block-wrapper,
+.skan__block .table__block-wrapper {
+   height: 310px;
+}
+
+.hidden_input {
+   position: absolute;
+   top: -5000px;
+}
+
+.table__block-table tr td:first-child {
+   padding-left: 20px;
+}
+
+.table__block-table tr {
+   cursor: pointer;
+}
+
+.accent__block-post-line .point.active {
+   background-color: #f5a22e;
+}
+
+.accent__block-post-line .point.done {
+   background-color: #29cb41;
+}
+
+.skan_error {
+   padding-left: 20px;
+}

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<documents session_ui="4Aa246a6-D7e2-2465-a056-0234554369a3" version="1.34" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<fts_data action_id="335">
+		<subject_id>86325e0c-9a23-4547-ad8a-219b4fc7fd03</subject_id>
+		<operation_date>2019-08-31T13:08:00+04:00</operation_date>
+		<fts_info>
+			<customs_code>10005022</customs_code>
+			<registration_date>01.06.2017</registration_date>
+			<gtd_number>50552</gtd_number>
+		</fts_info>
+		<custom_procedure_code>40</custom_procedure_code>
+		<order_details>
+			<union>
+				<sgtin>50754041396385N1C0B8VDFREK1</sgtin>
+				<customs_value>123.20</customs_value>
+			</union>
+			<union>
+				<sgtin>50754041396385N1C0B8VDFREK3</sgtin>
+				<customs_value>123.20</customs_value>
+			</union>
+		</order_details>
+	</fts_data>
+</documents>

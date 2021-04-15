@@ -1,0 +1,14 @@
+.list-select .select__current,
+.list-select-option {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+.list-select-selector {
+   padding-right: 27px !important;
+}
+.table-select {
+   background-color: #fff !important;
+   border: none !important;
+   border-radius: unset !important;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documents session_ui="4Aa246a6-D7e2-2465-a056-0234554369a3" version="1.34" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<accept action_id="701">
+		<subject_id>00000000104494</subject_id>
+		<counterparty_id>00000000104452</counterparty_id>
+		<operation_date>2019-08-31T12:12:00+04:00</operation_date>
+		<order_details>		
+			<sscc>147600887000000010</sscc>
+		</order_details>
+	</accept>
+</documents>

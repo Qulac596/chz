@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<documents session_ui="4Aa246a6-D7e2-2465-a056-0234554369a3" version="1.34" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<accept action_id="701">
+		<subject_id>86325e0c-9a23-4547-ad8a-219b4fc7fd03</subject_id>
+		<counterparty_id>f96ca479-c37f-46d7-9042-a9e55d4fe35d</counterparty_id>
+		<operation_date>2019-08-31T12:12:00+04:00</operation_date>
+		<order_details>		
+			<sgtin>50754041396385N1C0B8VDFREK1</sgtin>
+			<sgtin>50754041396385N1C0B8VDFREK3</sgtin>
+			<sgtin>50754041396385N1C0B8VDFREK8</sgtin>
+			<sgtin>50754041396385N1C0B8VDFREK9</sgtin>
+		</order_details>
+	</accept>
+</documents>

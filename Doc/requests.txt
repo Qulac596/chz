@@ -1,0 +1,751 @@
+Данные по входящему документу document_id: a4ba8ccf-92ad-452a-9e90-14f1fe292769
+
+Получение данных об отправителе.
+reestr_partners/filter 
+Запрос:
+{
+	"filter": {
+		"reg_entity_type": 1,
+		"system_subj_id": "870ce52e-b6a7-49bb-b1b8-1a9708ca89f9"
+	},
+	"start_from": 0,
+	"count": 100
+}
+Ответ:
+{
+	"filtered_records": [
+		{
+			"system_subj_id": "870ce52e-b6a7-49bb-b1b8-1a9708ca89f9",
+			"branches": [
+				{
+					"id": "00000000178309",
+					"address_fias": {
+						"houseguid": "3074a453-934c-4c42-907f-04ac148096b8",
+						"aoguid": "00000000-0000-0000-0000-000000000000"
+					},
+					"address_resolved": {
+						"address": "обл Ленинградская р-н Ломоносовский ш Волхонское",
+						"code": 0
+					},
+					"status": 0
+				},
+				{
+					"id": "00000000370036",
+					"address_fias": {
+						"houseguid": "aa62a81f-a279-4bcd-b198-0f25c7f01e93",
+						"aoguid": "00000000-0000-0000-0000-000000000000"
+					},
+					"address_resolved": {
+						"address": "обл Ленинградская, р-н Ломоносовский, тер Производственная зона Горелово квартал 5, ш Волхонское, Дом 2а",
+						"code": 0
+					},
+					"status": 1
+				}
+			],
+			"safe_warehouses": [],
+			"inn": "7816363530",
+			"KPP": "781001001",
+			"ORG_NAME": "Общество с ограниченной ответственностью \"ПУЛЬС СПб\"",
+			"OGRN": "1057810142642",
+			"FIRST_NAME": "Татьяна",
+			"MIDDLE_NAME": "Петровна",
+			"LAST_NAME": "Суржикова",
+			"entity_type": 1,
+			"op_date": {
+				"$date": "2018-11-06T08:32:59.393Z"
+			},
+			"op_exec_date": "2018-11-06T08:33:46.900Z",
+			"country_code": "RU",
+			"federal_subject_code": "78",
+			"chiefs": [
+				{
+					"FIRST_NAME": "Татьяна",
+					"MIDDLE_NAME": "Петровна",
+					"LAST_NAME": "Суржикова"
+				}
+			],
+			"state_gov_supplier": false
+		}
+	],
+	"filtered_records_count": 1,
+	"code": 0
+}
+
+Получение информации об получателе.
+reestr_partners/filter 
+Запрос:
+{
+	"filter": {
+		"reg_entity_type": 1,
+		"system_subj_id": "0838beb8-231d-4cc8-879c-6d0fa277d8db"
+	},
+	"start_from": 0,
+	"count": 100
+}
+Ответ:
+{
+	"filtered_records": [
+		{
+			"system_subj_id": "0838beb8-231d-4cc8-879c-6d0fa277d8db",
+			"branches": [
+				{
+					"id": "00000000267972",
+					"address_fias": {
+						"houseguid": "09c1e9ab-d7b6-496d-a7d2-dd5a74596be8",
+						"aoguid": "00000000-0000-0000-0000-000000000000"
+					},
+					"address_resolved": {
+						"address": "г Санкт-Петербург, ул Рылеева, Дом 10, Литера А",
+						"code": 0
+					},
+					"status": 1
+				},
+				{
+					"id": "00000000267973",
+					"address_fias": {
+						"houseguid": "d2d7fce1-6f42-4d6c-8a09-352a569caf07",
+						"aoguid": "00000000-0000-0000-0000-000000000000"
+					},
+					"address_resolved": {
+						"address": "г Санкт-Петербург, ул Большая Разночинная, Дом 27, Литера А",
+						"code": 0
+					},
+					"status": 1
+				}
+			],
+			"safe_warehouses": [],
+			"inn": "7842490486",
+			"KPP": "784201001",
+			"ORG_NAME": "Общество с ограниченной ответственностью \"ЭСТЕЛАЙФ\"",
+			"OGRN": "1137847044598",
+			"FIRST_NAME": "Татьяна",
+			"MIDDLE_NAME": "Геннадьевна",
+			"LAST_NAME": "Груздева",
+			"entity_type": 1,
+			"op_date": {
+				"$date": "2019-12-11T16:43:00.126Z"
+			},
+			"op_exec_date": "2019-12-11T16:43:42.907Z",
+			"country_code": "RU",
+			"federal_subject_code": "78",
+			"chiefs": [
+				{
+					"FIRST_NAME": "Татьяна",
+					"MIDDLE_NAME": "Геннадьевна",
+					"LAST_NAME": "Груздева"
+				}
+			],
+			"state_gov_supplier": false
+		}
+	],
+	"filtered_records_count": 1,
+	"code": 0
+}
+
+Получение данных о препарате по gtin(первые 14 знаков sgtin)
+reestr/med_products/public/04605894001360
+Ответ:
+{
+	"reg_status": "Действующий",
+	"reg_holder": "ООО НПК ФАРМАСОФТ",
+	"reg_number": "Р N002161/01",
+	"reg_date": "2008-03-14T00:00:00Z",
+	"prod_sell_name": "Мексидол",
+	"gtin": "04605894001360",
+	"drug_code": "21.20.10.239-000013-1-00017-2000000552882",
+	"drug_code_version": 2,
+	"type_form": "АМПУЛЫ",
+	"gnvlp": true,
+	"vzn_drug": false,
+	"prod_desc": "МЕКСИДОЛ® Раствор для внутривенного и внутримышечного введения 50 мг/мл",
+	"prod_d_name": "50 мг/мл",
+	"cost_limit": "72792",
+	"prod_form_name": "РАСТВОР ДЛЯ ВНУТРИВЕННОГО И ВНУТРИМЫШЕЧНОГО ВВЕДЕНИЯ",
+	"glf_name": "ФКП АРМАВИРСКАЯ БИОФАБРИКА",
+	"glf_country": "РОССИЯ",
+	"prod_pack_1_name": "АМПУЛЫ",
+	"prod_pack_1_size": "2.000",
+	"prod_pack_1_2": "20",
+	"prod_name": "ЭТИЛМЕТИЛГИДРОКСИПИРИДИНА СУКЦИНАТ",
+	"prod_d_norm_name": "50 мг/мл",
+	"prod_norm_name": "ЭТИЛМЕТИЛГИДРОКСИПИРИДИНА СУКЦИНАТ",
+	"prod_form_norm_name": "РАСТВОР ДЛЯ ВНУТРИВЕННОГО И ВНУТРИМЫШЕЧНОГО ВВЕДЕНИЯ",
+	"tn_ved": "3004 - Лекарственные средства (кроме товаров товарной позиции 3002, 3005 или 3006), состоящие из смешанных или несмешанных продуктов, для использования в терапевтических или профилактических целях, расфасованные в виде дозированных лекарственных форм (включая лекарственные средства в форме трансдермальных систем) или в формы или упаковки для розничной продажи:",
+	"completeness": "~"
+}
+
+Получение данных об всех препаратах
+Запрос: 
+reestr/sgtin/sgtins-by-list
+{
+	"filter": {
+		"sgtins": [
+			"046058940013600000000375487",
+			"090036380238621004546684030",
+			"046058940013600000000059355",
+			"090036380238621005609137352",
+			"090036380238621007994531741",
+			"090036380238621006469577049",
+			"090036380238621003588344027",
+			"046058940013600000000012161",
+			"046058940013600000000162737",
+			"046058940013600000000225028",
+			"090036380238621006804730304"
+		]
+	}
+}
+
+Ответ:
+{
+	"total": 11,
+	"failed": 0,
+	"entries": [
+		{
+			"id": "046058940013600000000375487",
+			"inn": "7842490486",
+			"gtin": "04605894001360",
+			"sgtin": "046058940013600000000375487",
+			"status": "in_circulation",
+			"status_date": "2020-11-25T14:24:48",
+			"batch": "340720",
+			"owner": "Общество с ограниченной ответственностью \"ЭСТЕЛАЙФ\"",
+			"emission_type": 2,
+			"release_date": "2020-08-18T06:36:01",
+			"emission_operation_date": "2020-08-05T07:27:06",
+			"federal_subject_code": "78",
+			"federal_subject_name": "Санкт-Петербург",
+			"expiration_date": "2023-08-31T00:00:00",
+			"prod_name": "ЭТИЛМЕТИЛГИДРОКСИПИРИДИНА СУКЦИНАТ",
+			"sell_name": "Мексидол",
+			"full_prod_name": "Мексидол® (Этилметилгидроксипиридина сукцинат), раствор для внутривенного и внутримышечного введения, 50 мг/мл",
+			"reg_holder": "ООО НПК ФАРМАСОФТ",
+			"pack1_desc": "внутри: 4 контурные ячейковые упаковки по 5 ампул по 2 мл",
+			"source_type": 1,
+			"last_tracing_op_date": "2020-11-26T02:42:19",
+			"drug_code": "21.20.10.239-000013-1-00017-2000000552882",
+			"prod_d_name": "50 мг/мл",
+			"prod_form_name": "РАСТВОР ДЛЯ ВНУТРИВЕННОГО И ВНУТРИМЫШЕЧНОГО ВВЕДЕНИЯ",
+			"oms_order_id": "7a317e4c-9dc4-4428-acb2-ec5fb535631b",
+			"billing_info": {
+				"is_prepaid": false,
+				"free_code": false,
+				"is_paid": true,
+				"contains_vzn": false,
+				"payments": [
+					{
+						"created_date": "2020-08-14T11:11:21.227Z",
+						"payment_date": "2020-08-14T22:32:25.931Z",
+						"tariff": 4
+					}
+				]
+			},
+			"billing_state": 0,
+			"vzn_drug": false,
+			"gnvlp": true,
+			"sys_id": "00000000267973"
+		},
+		{
+			"id": "090036380238621004546684030",
+			"inn": "7842490486",
+			"gtin": "09003638023862",
+			"sgtin": "090036380238621004546684030",
+			"status": "in_circulation",
+			"status_date": "2020-11-25T14:24:48",
+			"batch": "11872747",
+			"owner": "Общество с ограниченной ответственностью \"ЭСТЕЛАЙФ\"",
+			"emission_type": 3,
+			"release_date": "2020-09-14T07:55:50",
+			"emission_operation_date": "2020-03-27T14:39:49",
+			"federal_subject_code": "78",
+			"federal_subject_name": "Санкт-Петербург",
+			"expiration_date": "2023-03-17T00:00:00",
+			"prod_name": "ГЕМОДЕРИВАТ КРОВИ ТЕЛЯТ",
+			"sell_name": "Актовегин",
+			"full_prod_name": "Актовегин® Депротеинизированный гемодериват крови телят, раствор для инъекций, 40 мг/мл, 25 ампул по 2 мл",
+			"reg_holder": "ООО ТАКЕДА ФАРМАСЬЮТИКАЛ",
+			"pack1_desc": "внутри: 25 ампул раствор для инъекций 2 мл 40 мг/мл",
+			"source_type": 1,
+			"last_tracing_op_date": "2020-11-26T02:42:19",
+			"customs_point_id": "01413bde-5bd7-4f11-299f-a875f12991d9",
+			"drug_code": "21.20.10.139-000015-1-00002-2000000784038",
+			"prod_d_name": "40 мг/мл",
+			"prod_form_name": "РАСТВОР ДЛЯ ИНЪЕКЦИЙ",
+			"oms_order_id": "7e77ead5-bbd0-4b23-81ba-890bea875a7d",
+			"billing_info": {
+				"is_prepaid": false,
+				"free_code": false,
+				"is_paid": false,
+				"contains_vzn": false,
+				"payments": []
+			},
+			"vzn_drug": false,
+			"gnvlp": false,
+			"sys_id": "00000000267973"
+		},
+		{
+			"id": "046058940013600000000059355",
+			"inn": "7842490486",
+			"gtin": "04605894001360",
+			"sgtin": "046058940013600000000059355",
+			"status": "in_circulation",
+			"status_date": "2020-11-25T14:24:48",
+			"batch": "340720",
+			"owner": "Общество с ограниченной ответственностью \"ЭСТЕЛАЙФ\"",
+			"emission_type": 2,
+			"release_date": "2020-08-18T06:36:01",
+			"emission_operation_date": "2020-08-05T07:27:06",
+			"federal_subject_code": "78",
+			"federal_subject_name": "Санкт-Петербург",
+			"expiration_date": "2023-08-31T00:00:00",
+			"prod_name": "ЭТИЛМЕТИЛГИДРОКСИПИРИДИНА СУКЦИНАТ",
+			"sell_name": "Мексидол",
+			"full_prod_name": "Мексидол® (Этилметилгидроксипиридина сукцинат), раствор для внутривенного и внутримышечного введения, 50 мг/мл",
+			"reg_holder": "ООО НПК ФАРМАСОФТ",
+			"pack1_desc": "внутри: 4 контурные ячейковые упаковки по 5 ампул по 2 мл",
+			"source_type": 1,
+			"last_tracing_op_date": "2020-11-26T02:42:19",
+			"drug_code": "21.20.10.239-000013-1-00017-2000000552882",
+			"prod_d_name": "50 мг/мл",
+			"prod_form_name": "РАСТВОР ДЛЯ ВНУТРИВЕННОГО И ВНУТРИМЫШЕЧНОГО ВВЕДЕНИЯ",
+			"oms_order_id": "7a317e4c-9dc4-4428-acb2-ec5fb535631b",
+			"billing_info": {
+				"is_prepaid": false,
+				"free_code": false,
+				"is_paid": true,
+				"contains_vzn": false,
+				"payments": [
+					{
+						"created_date": "2020-08-14T11:11:21.134Z",
+						"payment_date": "2020-08-14T22:32:25.931Z",
+						"tariff": 4
+					}
+				]
+			},
+			"billing_state": 0,
+			"vzn_drug": false,
+			"gnvlp": true,
+			"sys_id": "00000000267973"
+		},
+		{
+			"id": "090036380238621005609137352",
+			"inn": "7842490486",
+			"gtin": "09003638023862",
+			"sgtin": "090036380238621005609137352",
+			"status": "in_circulation",
+			"status_date": "2020-11-25T14:24:48",
+			"batch": "11872747",
+			"owner": "Общество с ограниченной ответственностью \"ЭСТЕЛАЙФ\"",
+			"emission_type": 3,
+			"release_date": "2020-09-14T07:55:50",
+			"emission_operation_date": "2020-03-27T14:39:46",
+			"federal_subject_code": "78",
+			"federal_subject_name": "Санкт-Петербург",
+			"expiration_date": "2023-03-17T00:00:00",
+			"prod_name": "ГЕМОДЕРИВАТ КРОВИ ТЕЛЯТ",
+			"sell_name": "Актовегин",
+			"full_prod_name": "Актовегин® Депротеинизированный гемодериват крови телят, раствор для инъекций, 40 мг/мл, 25 ампул по 2 мл",
+			"reg_holder": "ООО ТАКЕДА ФАРМАСЬЮТИКАЛ",
+			"pack1_desc": "внутри: 25 ампул раствор для инъекций 2 мл 40 мг/мл",
+			"source_type": 1,
+			"last_tracing_op_date": "2020-11-26T02:42:19",
+			"customs_point_id": "01413bde-5bd7-4f11-299f-a875f12991d9",
+			"drug_code": "21.20.10.139-000015-1-00002-2000000784038",
+			"prod_d_name": "40 мг/мл",
+			"prod_form_name": "РАСТВОР ДЛЯ ИНЪЕКЦИЙ",
+			"oms_order_id": "29d8897e-b65c-4208-b4b2-e1b585148ef9",
+			"billing_info": {
+				"is_prepaid": false,
+				"free_code": false,
+				"is_paid": false,
+				"contains_vzn": false,
+				"payments": []
+			},
+			"vzn_drug": false,
+			"gnvlp": false,
+			"sys_id": "00000000267973"
+		},
+		{
+			"id": "090036380238621007994531741",
+			"inn": "7842490486",
+			"gtin": "09003638023862",
+			"sgtin": "090036380238621007994531741",
+			"status": "in_circulation",
+			"status_date": "2020-11-25T14:24:48",
+			"batch": "11872747",
+			"owner": "Общество с ограниченной ответственностью \"ЭСТЕЛАЙФ\"",
+			"emission_type": 3,
+			"release_date": "2020-09-14T07:55:50",
+			"emission_operation_date": "2020-03-27T14:39:46",
+			"federal_subject_code": "78",
+			"federal_subject_name": "Санкт-Петербург",
+			"expiration_date": "2023-03-17T00:00:00",
+			"prod_name": "ГЕМОДЕРИВАТ КРОВИ ТЕЛЯТ",
+			"sell_name": "Актовегин",
+			"full_prod_name": "Актовегин® Депротеинизированный гемодериват крови телят, раствор для инъекций, 40 мг/мл, 25 ампул по 2 мл",
+			"reg_holder": "ООО ТАКЕДА ФАРМАСЬЮТИКАЛ",
+			"pack1_desc": "внутри: 25 ампул раствор для инъекций 2 мл 40 мг/мл",
+			"source_type": 1,
+			"last_tracing_op_date": "2020-11-26T02:42:19",
+			"customs_point_id": "01413bde-5bd7-4f11-299f-a875f12991d9",
+			"drug_code": "21.20.10.139-000015-1-00002-2000000784038",
+			"prod_d_name": "40 мг/мл",
+			"prod_form_name": "РАСТВОР ДЛЯ ИНЪЕКЦИЙ",
+			"oms_order_id": "29d8897e-b65c-4208-b4b2-e1b585148ef9",
+			"billing_info": {
+				"is_prepaid": false,
+				"free_code": false,
+				"is_paid": false,
+				"contains_vzn": false,
+				"payments": []
+			},
+			"vzn_drug": false,
+			"gnvlp": false,
+			"sys_id": "00000000267973"
+		},
+		{
+			"id": "090036380238621006469577049",
+			"inn": "7842490486",
+			"gtin": "09003638023862",
+			"sgtin": "090036380238621006469577049",
+			"status": "in_circulation",
+			"status_date": "2020-11-25T14:24:48",
+			"batch": "11872747",
+			"owner": "Общество с ограниченной ответственностью \"ЭСТЕЛАЙФ\"",
+			"emission_type": 3,
+			"release_date": "2020-09-14T07:55:50",
+			"emission_operation_date": "2020-03-27T14:39:46",
+			"federal_subject_code": "78",
+			"federal_subject_name": "Санкт-Петербург",
+			"expiration_date": "2023-03-17T00:00:00",
+			"prod_name": "ГЕМОДЕРИВАТ КРОВИ ТЕЛЯТ",
+			"sell_name": "Актовегин",
+			"full_prod_name": "Актовегин® Депротеинизированный гемодериват крови телят, раствор для инъекций, 40 мг/мл, 25 ампул по 2 мл",
+			"reg_holder": "ООО ТАКЕДА ФАРМАСЬЮТИКАЛ",
+			"pack1_desc": "внутри: 25 ампул раствор для инъекций 2 мл 40 мг/мл",
+			"source_type": 1,
+			"last_tracing_op_date": "2020-11-26T02:42:19",
+			"customs_point_id": "01413bde-5bd7-4f11-299f-a875f12991d9",
+			"drug_code": "21.20.10.139-000015-1-00002-2000000784038",
+			"prod_d_name": "40 мг/мл",
+			"prod_form_name": "РАСТВОР ДЛЯ ИНЪЕКЦИЙ",
+			"oms_order_id": "29d8897e-b65c-4208-b4b2-e1b585148ef9",
+			"billing_info": {
+				"is_prepaid": false,
+				"free_code": false,
+				"is_paid": false,
+				"contains_vzn": false,
+				"payments": []
+			},
+			"vzn_drug": false,
+			"gnvlp": false,
+			"sys_id": "00000000267973"
+		},
+		{
+			"id": "090036380238621003588344027",
+			"inn": "7842490486",
+			"gtin": "09003638023862",
+			"sgtin": "090036380238621003588344027",
+			"status": "in_circulation",
+			"status_date": "2020-11-25T14:24:48",
+			"batch": "11872747",
+			"owner": "Общество с ограниченной ответственностью \"ЭСТЕЛАЙФ\"",
+			"emission_type": 3,
+			"release_date": "2020-09-14T07:55:50",
+			"emission_operation_date": "2020-03-27T14:39:49",
+			"federal_subject_code": "78",
+			"federal_subject_name": "Санкт-Петербург",
+			"expiration_date": "2023-03-17T00:00:00",
+			"prod_name": "ГЕМОДЕРИВАТ КРОВИ ТЕЛЯТ",
+			"sell_name": "Актовегин",
+			"full_prod_name": "Актовегин® Депротеинизированный гемодериват крови телят, раствор для инъекций, 40 мг/мл, 25 ампул по 2 мл",
+			"reg_holder": "ООО ТАКЕДА ФАРМАСЬЮТИКАЛ",
+			"pack1_desc": "внутри: 25 ампул раствор для инъекций 2 мл 40 мг/мл",
+			"source_type": 1,
+			"last_tracing_op_date": "2020-11-26T02:42:19",
+			"customs_point_id": "01413bde-5bd7-4f11-299f-a875f12991d9",
+			"drug_code": "21.20.10.139-000015-1-00002-2000000784038",
+			"prod_d_name": "40 мг/мл",
+			"prod_form_name": "РАСТВОР ДЛЯ ИНЪЕКЦИЙ",
+			"oms_order_id": "7e77ead5-bbd0-4b23-81ba-890bea875a7d",
+			"billing_info": {
+				"is_prepaid": false,
+				"free_code": false,
+				"is_paid": false,
+				"contains_vzn": false,
+				"payments": []
+			},
+			"vzn_drug": false,
+			"gnvlp": false,
+			"sys_id": "00000000267973"
+		},
+		{
+			"id": "046058940013600000000012161",
+			"inn": "7842490486",
+			"gtin": "04605894001360",
+			"sgtin": "046058940013600000000012161",
+			"status": "in_circulation",
+			"status_date": "2020-11-25T14:24:48",
+			"batch": "340720",
+			"owner": "Общество с ограниченной ответственностью \"ЭСТЕЛАЙФ\"",
+			"emission_type": 2,
+			"release_date": "2020-08-18T06:36:01",
+			"emission_operation_date": "2020-08-05T07:27:06",
+			"federal_subject_code": "78",
+			"federal_subject_name": "Санкт-Петербург",
+			"expiration_date": "2023-08-31T00:00:00",
+			"prod_name": "ЭТИЛМЕТИЛГИДРОКСИПИРИДИНА СУКЦИНАТ",
+			"sell_name": "Мексидол",
+			"full_prod_name": "Мексидол® (Этилметилгидроксипиридина сукцинат), раствор для внутривенного и внутримышечного введения, 50 мг/мл",
+			"reg_holder": "ООО НПК ФАРМАСОФТ",
+			"pack1_desc": "внутри: 4 контурные ячейковые упаковки по 5 ампул по 2 мл",
+			"source_type": 1,
+			"last_tracing_op_date": "2020-11-26T02:42:19",
+			"drug_code": "21.20.10.239-000013-1-00017-2000000552882",
+			"prod_d_name": "50 мг/мл",
+			"prod_form_name": "РАСТВОР ДЛЯ ВНУТРИВЕННОГО И ВНУТРИМЫШЕЧНОГО ВВЕДЕНИЯ",
+			"oms_order_id": "7a317e4c-9dc4-4428-acb2-ec5fb535631b",
+			"billing_info": {
+				"is_prepaid": false,
+				"free_code": false,
+				"is_paid": true,
+				"contains_vzn": false,
+				"payments": [
+					{
+						"created_date": "2020-08-14T11:11:21.112Z",
+						"payment_date": "2020-08-14T22:32:25.931Z",
+						"tariff": 4
+					}
+				]
+			},
+			"billing_state": 0,
+			"vzn_drug": false,
+			"gnvlp": true,
+			"sys_id": "00000000267973"
+		},
+		{
+			"id": "046058940013600000000162737",
+			"inn": "7842490486",
+			"gtin": "04605894001360",
+			"sgtin": "046058940013600000000162737",
+			"status": "in_circulation",
+			"status_date": "2020-11-25T14:24:48",
+			"batch": "340720",
+			"owner": "Общество с ограниченной ответственностью \"ЭСТЕЛАЙФ\"",
+			"emission_type": 2,
+			"release_date": "2020-08-18T06:36:01",
+			"emission_operation_date": "2020-08-05T07:27:06",
+			"federal_subject_code": "78",
+			"federal_subject_name": "Санкт-Петербург",
+			"expiration_date": "2023-08-31T00:00:00",
+			"prod_name": "ЭТИЛМЕТИЛГИДРОКСИПИРИДИНА СУКЦИНАТ",
+			"sell_name": "Мексидол",
+			"full_prod_name": "Мексидол® (Этилметилгидроксипиридина сукцинат), раствор для внутривенного и внутримышечного введения, 50 мг/мл",
+			"reg_holder": "ООО НПК ФАРМАСОФТ",
+			"pack1_desc": "внутри: 4 контурные ячейковые упаковки по 5 ампул по 2 мл",
+			"source_type": 1,
+			"last_tracing_op_date": "2020-11-26T02:42:19",
+			"drug_code": "21.20.10.239-000013-1-00017-2000000552882",
+			"prod_d_name": "50 мг/мл",
+			"prod_form_name": "РАСТВОР ДЛЯ ВНУТРИВЕННОГО И ВНУТРИМЫШЕЧНОГО ВВЕДЕНИЯ",
+			"oms_order_id": "7a317e4c-9dc4-4428-acb2-ec5fb535631b",
+			"billing_info": {
+				"is_prepaid": false,
+				"free_code": false,
+				"is_paid": true,
+				"contains_vzn": false,
+				"payments": [
+					{
+						"created_date": "2020-08-14T11:11:21.173Z",
+						"payment_date": "2020-08-14T22:32:25.931Z",
+						"tariff": 4
+					}
+				]
+			},
+			"billing_state": 0,
+			"vzn_drug": false,
+			"gnvlp": true,
+			"sys_id": "00000000267973"
+		},
+		{
+			"id": "046058940013600000000225028",
+			"inn": "7842490486",
+			"gtin": "04605894001360",
+			"sgtin": "046058940013600000000225028",
+			"status": "in_circulation",
+			"status_date": "2020-11-25T14:24:48",
+			"batch": "340720",
+			"owner": "Общество с ограниченной ответственностью \"ЭСТЕЛАЙФ\"",
+			"emission_type": 2,
+			"release_date": "2020-08-18T06:36:01",
+			"emission_operation_date": "2020-08-05T07:27:06",
+			"federal_subject_code": "78",
+			"federal_subject_name": "Санкт-Петербург",
+			"expiration_date": "2023-08-31T00:00:00",
+			"prod_name": "ЭТИЛМЕТИЛГИДРОКСИПИРИДИНА СУКЦИНАТ",
+			"sell_name": "Мексидол",
+			"full_prod_name": "Мексидол® (Этилметилгидроксипиридина сукцинат), раствор для внутривенного и внутримышечного введения, 50 мг/мл",
+			"reg_holder": "ООО НПК ФАРМАСОФТ",
+			"pack1_desc": "внутри: 4 контурные ячейковые упаковки по 5 ампул по 2 мл",
+			"source_type": 1,
+			"last_tracing_op_date": "2020-11-26T02:42:19",
+			"drug_code": "21.20.10.239-000013-1-00017-2000000552882",
+			"prod_d_name": "50 мг/мл",
+			"prod_form_name": "РАСТВОР ДЛЯ ВНУТРИВЕННОГО И ВНУТРИМЫШЕЧНОГО ВВЕДЕНИЯ",
+			"oms_order_id": "7a317e4c-9dc4-4428-acb2-ec5fb535631b",
+			"billing_info": {
+				"is_prepaid": false,
+				"free_code": false,
+				"is_paid": true,
+				"contains_vzn": false,
+				"payments": [
+					{
+						"created_date": "2020-08-14T11:11:21.188Z",
+						"payment_date": "2020-08-14T22:32:25.931Z",
+						"tariff": 4
+					}
+				]
+			},
+			"billing_state": 0,
+			"vzn_drug": false,
+			"gnvlp": true,
+			"sys_id": "00000000267973"
+		},
+		{
+			"id": "090036380238621006804730304",
+			"inn": "7842490486",
+			"gtin": "09003638023862",
+			"sgtin": "090036380238621006804730304",
+			"status": "in_circulation",
+			"status_date": "2020-11-25T14:24:48",
+			"batch": "11872747",
+			"owner": "Общество с ограниченной ответственностью \"ЭСТЕЛАЙФ\"",
+			"emission_type": 3,
+			"release_date": "2020-09-14T07:55:50",
+			"emission_operation_date": "2020-03-27T14:39:46",
+			"federal_subject_code": "78",
+			"federal_subject_name": "Санкт-Петербург",
+			"expiration_date": "2023-03-17T00:00:00",
+			"prod_name": "ГЕМОДЕРИВАТ КРОВИ ТЕЛЯТ",
+			"sell_name": "Актовегин",
+			"full_prod_name": "Актовегин® Депротеинизированный гемодериват крови телят, раствор для инъекций, 40 мг/мл, 25 ампул по 2 мл",
+			"reg_holder": "ООО ТАКЕДА ФАРМАСЬЮТИКАЛ",
+			"pack1_desc": "внутри: 25 ампул раствор для инъекций 2 мл 40 мг/мл",
+			"source_type": 1,
+			"last_tracing_op_date": "2020-11-26T02:42:19",
+			"customs_point_id": "01413bde-5bd7-4f11-299f-a875f12991d9",
+			"drug_code": "21.20.10.139-000015-1-00002-2000000784038",
+			"prod_d_name": "40 мг/мл",
+			"prod_form_name": "РАСТВОР ДЛЯ ИНЪЕКЦИЙ",
+			"oms_order_id": "29d8897e-b65c-4208-b4b2-e1b585148ef9",
+			"billing_info": {
+				"is_prepaid": false,
+				"free_code": false,
+				"is_paid": false,
+				"contains_vzn": false,
+				"payments": []
+			},
+			"vzn_drug": false,
+			"gnvlp": false,
+			"sys_id": "00000000267973"
+		}
+	],
+	"failed_entries": []
+}
+
+Метод фильтрации по субъектам обращения
+Url: reestr_partners/filter
+Метод: Post
+Тело:
+{
+	"filter": {
+	"reg_entity_type": 1, //обазятельное поле
+		"inn": "2126003123"
+	},
+	"start_from": 0,
+	"count": 100
+}
+
+Ответ:
+{
+	"filtered_records": [
+		{
+			"system_subj_id": "02d90ff1-d336-40f8-a930-ffb386e38030",
+			"branches": [
+				{
+					"id": "00000000100498",
+					"address_fias": {
+						"houseguid": "2357eb48-9510-4ef5-ac20-8739be34a010",
+						"aoguid": "00000000-0000-0000-0000-000000000000"
+					},
+					"address_resolved": {
+						"address": "Чувашия Чувашская Республика -, г Чебоксары, ул Бондарева, Дом 13/15",
+						"code": 0
+					},
+					"status": 1
+				},
+				{
+					"id": "00000000102631",
+					"address_fias": {
+						"houseguid": "2fa21e63-f966-44c0-9039-8ee092f7d4ad",
+						"aoguid": "00000000-0000-0000-0000-000000000000"
+					},
+					"address_resolved": {
+						"address": "Чувашия Чувашская Республика -, г Чебоксары, пр-д Базовый, Дом 7",
+						"code": 0
+					},
+					"status": 1
+				},
+				{
+					"id": "00000000102632",
+					"address_fias": {
+						"houseguid": "5d93a803-6c92-4961-b414-744b01b6024d",
+						"aoguid": "00000000-0000-0000-0000-000000000000"
+					},
+					"address_resolved": {
+						"address": "Чувашия Чувашская Республика -, г Чебоксары, пр-кт Ленина, Здание 47",
+						"code": 0
+					},
+					"status": 1
+				}
+			],
+			"safe_warehouses": [
+				{
+					"id": "00000000100504",
+					"address_fias": {
+						"houseguid": "2357eb48-9510-4ef5-ac20-8739be34a010",
+						"aoguid": "00000000-0000-0000-0000-000000000000"
+					},
+					"address_resolved": {
+						"address": "Чувашия Чувашская Республика -, г Чебоксары, ул Бондарева, Дом 13/15",
+						"code": 0
+					},
+					"status": 1
+				}
+			],
+			"inn": "2126003123",
+			"KPP": "213001001",
+			"ORG_NAME": "ГОСУДАРСТВЕННОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ ЧУВАШСКОЙ РЕСПУБЛИКИ \"ФАРМАЦИЯ\" МИНИСТЕРСТВА ЗДРАВООХРАНЕНИЯ ЧУВАШСКОЙ РЕСПУБЛИКИ",
+			"OGRN": "1022101274502",
+			"FIRST_NAME": "Ольга",
+			"MIDDLE_NAME": "Николаевна",
+			"LAST_NAME": "Казарина",
+			"entity_type": 1,
+			"op_date": {
+				"$date": "2018-05-29T05:34:51.549Z"
+			},
+			"op_exec_date": "2018-05-29T05:35:54.994Z",
+			"country_code": "RU",
+			"federal_subject_code": "21",
+			"chiefs": [
+				{
+					"FIRST_NAME": "Ольга",
+					"MIDDLE_NAME": "Николаевна",
+					"LAST_NAME": "Казарина"
+				}
+			],
+			"state_gov_supplier": false
+		}
+	],
+	"filtered_records_count": 1,
+	"code": 0
+}

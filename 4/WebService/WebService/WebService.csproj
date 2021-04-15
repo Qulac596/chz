@@ -1,0 +1,206 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A93188A2-0F1B-4AF2-8158-F93594FF64AE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebService</RootNamespace>
+    <AssemblyName>WebService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Tools.SqlTransact, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tools.SqlTransact4.2.0.0\lib\net40\Tools.SqlTransact.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="index\Index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AddressesController.cs" />
+    <Compile Include="Controllers\CompaniesController.cs" />
+    <Compile Include="Controllers\ContractTypesController.cs" />
+    <Compile Include="Controllers\NaklItemsController.cs" />
+    <Compile Include="Controllers\NaklsController.cs" />
+    <Compile Include="Controllers\ReceiveTypesController.cs" />
+    <Compile Include="Controllers\SourceTypesController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Controllers\NaklStatusesController.cs" />
+    <Compile Include="Controllers\SgtinsController.cs" />
+    <Compile Include="DataBase\Address\AddressDataBase.cs" />
+    <Compile Include="DataBase\Address\IAddressDataBase.cs" />
+    <Compile Include="DataBase\Company\CompanyDataBase.cs" />
+    <Compile Include="DataBase\Company\CompanyResult.cs" />
+    <Compile Include="DataBase\Company\ICompanyDataBase.cs" />
+    <Compile Include="DataBase\ContractType\ContractTypeDataBase.cs" />
+    <Compile Include="DataBase\ContractType\IContractTypeDataBase.cs" />
+    <Compile Include="DataBase\DataBase.cs" />
+    <Compile Include="DataBase\NaklItem\INaklItemDataBase.cs" />
+    <Compile Include="DataBase\NaklItem\NaklItemDataBase.cs" />
+    <Compile Include="DataBase\NaklItem\NaklItemSenOneParameter.cs" />
+    <Compile Include="DataBase\NaklItem\NaklItemSetAllStatusParametr.cs" />
+    <Compile Include="DataBase\NaklStatus\INaklStatusDataBase.cs" />
+    <Compile Include="DataBase\NaklStatus\NaklStatusDataBase.cs" />
+    <Compile Include="DataBase\Nakl\AcceptTypeDataConverter.cs" />
+    <Compile Include="DataBase\Nakl\INaklDataBase.cs" />
+    <Compile Include="DataBase\Nakl\NaklDataBase.cs" />
+    <Compile Include="DataBase\Nakl\NaklFinishParameter.cs" />
+    <Compile Include="DataBase\Nakl\NaklIdParameter.cs" />
+    <Compile Include="DataBase\Nakl\NaklItemIdParameter.cs" />
+    <Compile Include="DataBase\Nakl\NaklUpdateParameter.cs" />
+    <Compile Include="DataBase\Nakl\SelectAllNaklParametr.cs" />
+    <Compile Include="DataBase\Nakl\SelectStatusNaklParameter.cs" />
+    <Compile Include="DataBase\RecesiverType\IRecesiverTypeDataBase.cs" />
+    <Compile Include="DataBase\RecesiverType\RecesiverTypeDataBase.cs" />
+    <Compile Include="DataBase\Sgtin\GtinIdParameter.cs" />
+    <Compile Include="DataBase\Sgtin\ISgtinDataBase.cs" />
+    <Compile Include="DataBase\Sgtin\MatchCheckResult.cs" />
+    <Compile Include="DataBase\Sgtin\SgtinDataBase.cs" />
+    <Compile Include="DataBase\SourceType\SourceTypDataBase.cs" />
+    <Compile Include="DataBase\SourceType\ISourceTypeDataBase.cs" />
+    <Compile Include="DataBase\UserAccessTokenParameter.cs" />
+    <Compile Include="DataBase\User\GetUserParametr.cs" />
+    <Compile Include="DataBase\User\IUserDataBase.cs" />
+    <Compile Include="DataBase\User\UserAccessTokenParameter.cs" />
+    <Compile Include="DataBase\User\UserDataBase.cs" />
+    <Compile Include="DataBase\User\UserIdParameter.cs" />
+    <Compile Include="DependencyResolver.cs" />
+    <Compile Include="Filters\AuthorizationFiltr.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccessTokenModel.cs" />
+    <Compile Include="Models\AddressModel.cs" />
+    <Compile Include="Models\CompanyModel.cs" />
+    <Compile Include="Models\ContractTypeModel.cs" />
+    <Compile Include="Models\CreateNaklItemModel.cs" />
+    <Compile Include="Models\CreateNaklModel.cs" />
+    <Compile Include="Models\NaklGridModel.cs" />
+    <Compile Include="Models\NaklItemModel.cs" />
+    <Compile Include="Models\NaklModel.cs" />
+    <Compile Include="Models\NaklStatusModel.cs" />
+    <Compile Include="Models\ReceiveTypeModel.cs" />
+    <Compile Include="Models\SgtinModel.cs" />
+    <Compile Include="Models\SourceTypeModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53094</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53094/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

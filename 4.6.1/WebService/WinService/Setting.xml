@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<appSettings>
+
+  <!--Флаг отладки-->
+  <add key="Debug" value="True"></add>
+
+  <!--Настройки Web-службы-->
+  <add key="BaseUrl" value="http://localhost:9000/"></add>
+  <add key="ConnectionString" value="Data Source=DESKTOP\SQLEXPRESS;User ID={login};Password={password}; Initial Catalog=WebTest; Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"></add>
+
+  <!--Настройки подключения к БД-->
+  <!--Имя сервера БД-->
+  <add key="BDServerName" value="DESKTOP\SQLEXPRESS" />
+  <!--Логин пользователя в БД-->
+  <add key="ID" value="sa"></add>
+  <!--Пароль пользователя в БД-->
+  <add key="Password" value="197312"></add>
+  <!--**************************************************************************-->
+ 
+  <!--Настройки подключения к МДЛП-->
+  <!-- Url для подключения к ЧЗ по http-->
+  <add key="Url" value="http://api.sb.mdlp.crpt.ru/api/v1/"></add>
+  <!-- Url для подключения к ЧЗ по https-->
+  <add key="HttpsUrl" value="https://api.sb.mdlp.crpt.ru/api/v1/"></add>
+  <!--Идентификатор клиента-->
+  <add key="ClientId" value="ff62e0ee-6232-431e-a857-a0cee4031de2"></add>
+  <!--Секретный ключ-->
+  <add key="ClientSecret" value="5c0e2296-bbf0-44aa-9f9f-5af16432ec29"></add>
+  <!--Уникальный идентификатор пользователя (Отпечаток сертификата цифровой подписи клиента) -->
+  <add key="UserId" value="D5E50BFFBB934104D269EA8D8540959CF8050659"></add>
+  <!--********************************************************************-->
+
+  <!--Настройки службы загрузки документов в МДЛП-->
+  <!--Интервал в секундах между проверками в БД новых документов-->
+  <add key="UnloadServiceReadNewTimeOut" value="10"></add>
+  <!--Имя папки с лог-файлами-->
+  <add key="UloadServiceLogFolder" value="UnloadServiceLog" />
+  <!--*****************************************************************************-->
+
+
+  <!--Настройки службы загрузки документов из МДЛП-->
+  <!--Имя папки с лог-файлами -->
+  <add key="LoadServiceLogFolder" value="LoadServiceLog" />
+  <!--Дата с который начинается поиск документов при первом запуске службы в формате: ГГГГ.ММ.ДД-->
+  <add key="StartDateTime" value="2020.06.01" />
+  <!--Интервал в секундах между проверками новых документов в МДЛП-->
+  <add key="СheckingDocumentTimeOut" value="10" />
+  <!--******************************************************************************-->
+
+
+  <!--Настройки службы получения справочной информации из МДЛП-->
+  <!--Интервал времени между проверками новых запросов-->
+  <add key="СheckingNewRequestTimeOut" value="10" />
+  <!--Имя папки с лог-файлами -->
+  <add key="DirectoryLoaderServiceLogFolder" value="DirectoryLoaderServiceLog" />
+</appSettings>

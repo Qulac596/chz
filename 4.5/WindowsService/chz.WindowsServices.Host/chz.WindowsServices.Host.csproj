@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{154B9CCE-7568-4936-AF07-AE86F66C4222}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>chz.WindowsServices.Host</RootNamespace>
+    <AssemblyName>chz.WindowsServices.Host</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions, Version=5.11.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.10\lib\net45\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.11.11.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.11.10\lib\net45\Unity.Container.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Directory\IocContainer.cs" />
+    <Compile Include="Directory\Service.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Installer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Installer.designer.cs">
+      <DependentUpon>Installer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IocContainer.cs" />
+    <Compile Include="IocContainerBase.cs" />
+    <Compile Include="Load\IocContainer.cs" />
+    <Compile Include="Load\Service.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThisLoad\IocContainer.cs" />
+    <Compile Include="ThisLoad\Service.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Unload\IocContainer.cs" />
+    <Compile Include="Unload\Service.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\chz.Client.DirectoryLoader\chz.Client.DirectoryLoader.csproj">
+      <Project>{77ebf3e2-d66e-4fdc-b33e-53446180bb04}</Project>
+      <Name>chz.Client.DirectoryLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.Client.LoadDocument\chz.Client.LoadDocument.csproj">
+      <Project>{0698643a-b587-4abb-93c3-e8c6bce31628}</Project>
+      <Name>chz.Client.LoadDocument</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.Client.ThisLoadDocument\chz.Client.ThisLoadDocument.csproj">
+      <Project>{881e02a8-9edc-4e57-9063-942f4e242622}</Project>
+      <Name>chz.Client.ThisLoadDocument</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.Client.UnloadDocument\chz.Client.UnloadDocument.csproj">
+      <Project>{6672c6f8-742b-4b85-b56a-ac201e0c0347}</Project>
+      <Name>chz.Client.UnloadDocument</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.Client\chz.Client.csproj">
+      <Project>{be4fdac7-3f47-4c6e-b739-8dc2ff42dbef}</Project>
+      <Name>chz.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.DataAccess.DirectoryLoader\chz.DataAccess.DirectoryLoader.csproj">
+      <Project>{78e31dcf-f2ca-4e3c-bddd-97e7edbb7102}</Project>
+      <Name>chz.DataAccess.DirectoryLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.DataAccess.LoadDocument\chz.DataAccess.LoadDocument.csproj">
+      <Project>{b286cba5-a2df-4882-888b-b3dcfcd3d385}</Project>
+      <Name>chz.DataAccess.LoadDocument</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.DataAccess.ServiceLog\chz.DataAccess.ServiceLog.csproj">
+      <Project>{5c2ef8a8-e419-4c1c-b531-8b36281f3818}</Project>
+      <Name>chz.DataAccess.ServiceLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.DataAccess.ThisLoadDocument\chz.DataAccess.ThisLoadDocument.csproj">
+      <Project>{07c5f1e4-eae2-455c-89dc-afe222c7afe8}</Project>
+      <Name>chz.DataAccess.ThisLoadDocument</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.DataAccess.UnloadDocument\chz.DataAccess.UnloadDocument.csproj">
+      <Project>{ac6f51dd-257e-4b24-aa0f-ff2e74269ece}</Project>
+      <Name>chz.DataAccess.UnloadDocument</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.DataAccess\chz.DataAccess.csproj">
+      <Project>{75f5bbeb-79e9-4069-a237-bcb9ccfbbebf}</Project>
+      <Name>chz.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.WebApiClient\chz.WebApiClient.csproj">
+      <Project>{93e04b05-a21f-4843-8f61-6fd5e26e950c}</Project>
+      <Name>chz.WebApiClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.WindowsServices.LoadDocument\chz.WindowsServices.LoadDocument.csproj">
+      <Project>{7d1aeae5-14e8-42eb-8bff-e71ace31b396}</Project>
+      <Name>chz.WindowsServices.LoadDocument</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.WindowsServices.RequestService\chz.WindowsServices.RequestService.csproj">
+      <Project>{43001598-b277-4043-b391-2fe0e77b95a8}</Project>
+      <Name>chz.WindowsServices.RequestService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.WindowsServices.ThisLoadDocument\chz.WindowsServices.ThisLoadDocument.csproj">
+      <Project>{d3a5f9aa-2f20-4c01-9ac9-b357b7f60383}</Project>
+      <Name>chz.WindowsServices.ThisLoadDocument</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.WindowsServices.UnloadDocument\chz.WindowsServices.UnloadDocument.csproj">
+      <Project>{1fff39df-cc66-4579-b2a9-3afd4c2da1d5}</Project>
+      <Name>chz.WindowsServices.UnloadDocument</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\chz.WindowsServices\chz.WindowsServices.csproj">
+      <Project>{1d58f9d5-5ac9-4935-961e-d575ce0481b1}</Project>
+      <Name>chz.WindowsServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\commoni.Common\commoni.Common.csproj">
+      <Project>{fe87dc90-eaba-486c-b282-24655da70f58}</Project>
+      <Name>commoni.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\commoni.Cryptography\commoni.Cryptography.csproj">
+      <Project>{8b15ff56-d4a5-4f0c-b93d-22c6071009a0}</Project>
+      <Name>commoni.Cryptography</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\commoni.Infrastructure\commoni.Infrastructure.csproj">
+      <Project>{dd5c9640-6d75-4d97-b37c-0598ed3a920e}</Project>
+      <Name>commoni.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\commoni.Setting\commoni.Setting.csproj">
+      <Project>{7a03128f-1b22-42ee-a696-667a5c51a5e6}</Project>
+      <Name>commoni.Setting</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
